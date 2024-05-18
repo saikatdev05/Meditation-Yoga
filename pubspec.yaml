@@ -1,0 +1,54 @@
+name: meditation_app_ui
+description: "A new Flutter project for a meditation app."
+
+# Prevent accidental publishing to pub.dev
+publish_to: 'none'
+
+# Define version and build number
+version: 1.0.0+1
+
+# Specify the required Flutter SDK version
+environment:
+  sdk: '>=3.4.0 <4.0.0'
+
+# List dependencies required by the app
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.6
+  flutter_svg: ^1.0.3
+  glassmorphism: ^3.0.0
+  get_it: ^7.2.0
+  provider: ^6.0.2
+
+# Development dependencies for testing and linting
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  flutter_native_splash: ^2.0.4
+
+# Flutter-specific configuration
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/
+  fonts:
+    - family: "SF Pro Display"
+      fonts:
+        - asset: "assets/fonts/sfpro-regular.ttf"
+          style: "normal"
+          weight: 700
+    - family: "SF Pro Text"
+      fonts:
+        - asset: "assets/fonts/sfpro-text.ttf"
+          style: "normal"
+          weight: 400
+
+# flutter_native_splash configuration
+flutter_native_splash:
+  background_image: "assets/images/bg.png"
+  image: assets/images/splash_1000.png
+  android: true
+  ios: true
